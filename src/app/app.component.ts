@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material-course';
+
+  notifications = 0;
+
+  showSpinner = false;
+
+  selectedValue = "";
+
+  loadData(){
+    this.showSpinner = true;
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 5000);
+  }
 }
